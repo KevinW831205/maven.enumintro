@@ -9,10 +9,16 @@ public class AliceBobEvaluator {
     }
 
     public boolean isAlice() {
+        if(input.toLowerCase().equals(AliceBobEnum.ALICE.name().toLowerCase())){
+            return true;
+        }
         return false;
     }
 
     public boolean isBob() {
+        if(input.toLowerCase().equals(AliceBobEnum.BOB.name().toLowerCase())){
+            return true;
+        }
         return false;
     }
 }
